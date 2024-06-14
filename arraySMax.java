@@ -6,7 +6,7 @@ public class arraySMax {
             if(arr[i]>max){
                 sMax=max;
                 max=arr[i];
-                
+
             }
             else if(arr[i]>sMax && arr[i]!=max)sMax=arr[i];
         }
