@@ -1,5 +1,5 @@
 
-class Solution {
+class Main {
     public int reverse(int x) {
         long rev=0;
         while(Math.abs(x)>0){

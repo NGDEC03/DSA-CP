@@ -1,4 +1,4 @@
-
+import java.lang.Math;
 class Solution {
     public boolean isPalindrome(int x) {
         long rev=0;
@@ -10,4 +10,4 @@ class Solution {
         }
         if(rev==k)
             return true;
-        return false;
+        return false;}}

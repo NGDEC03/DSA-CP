@@ -1,13 +1,14 @@
-import java.lang.Math;
 class Solution {
-    public boolean isPalindrome(int x) {
-        long rev=0;
-        int k=x;
-        while((x)>0){
-            int temp=x%10;
-            rev=rev*10+temp;
-            x/=10;
+    static Long[] lcmAndGcd(Long A , Long B) {
+        Long C=A,D=B;
+        Long[]arr=new Long[2];
+        while(A>0 && B>0){
+            if(B>A)B=B%A;
+            else A=A%B;
         }
-        if(rev==k)
-            return true;
-        return false;
+        if(A>0)arr[1]=A;
+        else arr[1]=B;
+        arr[0]=(C*D)/arr[1];
+        return arr;
+    }
+}
